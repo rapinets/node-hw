@@ -1,4 +1,10 @@
-// server.mjs
+/**
+ * Розробити серверну частину додатку, який за відповідними маршрутами (“/”, “/coffee”, “/music”)
+ * повертає створені HTML документи (розмістіть їх там же, де і додаток), що описують: інформацію про себе,
+ * інфорімацію про улюблену кав’ярню,  інформацію про улюблений музичний гурт.
+ */
+
+// app.mjs
 import { createServer } from 'node:http';
 import fs from 'fs'
 import path from 'node:path';
@@ -48,4 +54,4 @@ server.listen(3000, '127.0.0.1', () => {
   console.log('Listening on 127.0.0.1:3000');
 });
 
-// run with `node server.mjs`
+// run with `node app.mjs`
